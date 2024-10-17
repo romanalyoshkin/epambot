@@ -29,8 +29,8 @@ def get_completion_from_messages_azure(messages,
 from langchain_openai import AzureOpenAIEmbeddings
 
 embeddings = AzureOpenAIEmbeddings(
-    azure_deployment="text-embedding-ada-002",
-    api_key=os.getenv("AZURE_KEY"),
+    azure_deployment="text-embedding-ada-002"
+    api_key=os.getenv("AZURE_KEY")
     azure_endpoint=os.getenv("AZURE_EMBEDINGS_ENDPOINT")
 )
 
